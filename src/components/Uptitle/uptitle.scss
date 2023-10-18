@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.uptitle {
+    @include poppins-700-11;
+    color: $main-blue;
+}

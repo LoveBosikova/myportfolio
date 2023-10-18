@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+
+.header {
+    @include flex-sbetween-center;
+    @include poppins-700;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+
+    &__name {
+        font-size: 1.35rem;
+        margin-left: 3rem;
+        cursor: pointer;
+        color: $main-black;
+    }
+
+    &__navitems {
+        @include flex-sbetween-center;
+        gap: 1rem;
+        margin-right: 3rem;
+        font-size: 1rem;
+
+        @media (max-width: 570px) {
+            display: none;
+        }
+    }
+
+    &__navlink {
+        &:hover {
+            color: $activeLinks;
+        }
+    }
+}

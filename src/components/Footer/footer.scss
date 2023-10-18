@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.footer {
+    background-color: $main-black;
+    height: 12vh;
+    color: $white;
+    @include poppins-700-13;
+    padding-top: 4.5rem;
+
+    &__wrap {
+        @include portfolio-width;
+        @include mx-center;
+        @include flex-sbetween-center;
+        max-width: 1024px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 80vw;
+            width: 80vw;
+        }
+    }
+
+    &__contacts {
+        @include flex-sbetween-center;
+        gap: 1.5rem;
+    }
+
+    &__icon {
+        &--git {
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+        &--linkedIn {
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.portfolio {
+    @include mx-center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    max-width: 57rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    &__wrap {
+    background-color: $light-bgcolor;
+    }
+
+    &__projectsWrap {
+        max-width: 100%;
+        padding-top: 3.5rem;
+    }
+
+    @media (max-width: 900px) {
+        max-width: 70vw;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+
+    @media (max-width: 767px) {
+        max-width: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

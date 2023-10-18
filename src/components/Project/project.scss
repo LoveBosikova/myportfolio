@@ -1,0 +1,153 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+* {
+    transition: all 0.25s ease-in-out;
+}
+
+.project {
+    max-width: 100%;
+    width: 100%;
+    box-shadow: $card-shadow;
+    border-radius: $main-borderradius;
+    margin-bottom: 5rem;
+
+    &__wrap {
+        @include flex-sbetween-center;
+        padding: 1rem;
+        gap: 2rem;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+
+    &__imgSide {
+        flex-basis: 60%;
+        max-width: 56%;
+        max-height: 35vh;
+        box-shadow:  $card-shadow;
+        border-radius: $main-borderradius;
+        overflow: hidden;
+
+        @media (max-width: 900px) {
+            max-width: 95%;
+        }
+    }
+
+    &__img {
+        @include img-size-fit;
+        transform: translateY(0%);
+        transition: transform 10s ease-in-out 0s;
+
+        &:hover {
+            transform: translateY(-83%);
+            transition: transform 10s ease-in-out 0s;
+        }
+    }
+
+    &__textSide {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        align-items: center;
+        width: 40%;
+        max-width: 40%;
+        padding-top: 1.2rem;
+
+        @media (max-width: 900px) {
+            width: 65%;
+            max-width: 70%;
+            align-self: center;
+            padding-bottom: 1.2rem;
+        }
+    }
+
+    &__name {
+        color: $main-black;
+        @include poppins-700-13;
+        text-transform: uppercase;
+        margin-bottom: 1.1rem;
+    }
+
+    &__timing {
+        color: $main-gray;
+        @include poppins-700-11;
+        padding-left: .15rem;
+        padding-right: .15rem;
+    }
+
+    &__description {
+        @include poppins-500-11;
+        text-align: center;
+        line-height: 1.5;
+        color: $main-gray;
+    }
+
+    &__stack {
+        @include flex-center;
+        gap: 3rem;
+        color: $total-black;
+        @include moolish-600-11;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__techWrap {
+        padding: .7rem 1rem;
+        box-shadow: $card-shadow;
+    }
+}
+
+.links {
+    @include flex-center;
+    gap: 5rem;
+    @include poppins-500-11;
+
+    &__item {
+        @include flex-center;
+        gap: .2rem;
+        flex-wrap: nowrap;
+
+        &--code:hover {
+            .links__icon--code {
+                stroke: $main-blue;
+            }
+
+            .links__text--code {
+                color: $main-blue;
+            }
+        }
+
+        &--demo:hover {
+            .links__icon--demo {
+                stroke: $main-blue;
+            }
+
+            .links__text--demo {
+                color: $main-blue;
+            }
+        }
+    }
+
+    &__text {
+        color: $main-black;
+    } 
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+    
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.flex-column {
+    flex-direction: row;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}

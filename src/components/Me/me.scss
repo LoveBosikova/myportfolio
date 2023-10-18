@@ -1,0 +1,71 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+.me {
+
+    @include container-width;
+    @include mx-center;
+    @include flex-sbetween-center;
+    gap: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    &__imgSide {
+        flex-basis: 45%;
+        position: relative;
+    }
+
+    &__img {
+        border-radius: 1.7rem;
+        @include img-size-fit;
+    }
+
+    &__imgDeveloper, 
+    &__imgCircleText {
+        position: absolute;
+    }
+
+    &__imgDeveloper {
+        right: 0.5rem;
+        bottom: -0.3rem;
+        z-index: 2;
+        width: 7rem;
+    }
+
+    &__imgCircleText {
+        right: -2.4rem;
+        bottom: -4rem;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 12.5rem;
+        -webkit-animation: rotate 9s linear infinite;
+        animation: rotate 9s linear infinite;
+    }
+
+    &__textSide {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 55%;
+    }
+
+    &__text {
+        @include moolish-500-11;
+        line-height: 1.5;
+        color: $main-gray;
+    }
+}
