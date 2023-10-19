@@ -15,8 +15,7 @@ export default function Me (props) {
                 <div className="me__textSide">
                     <Uptitle text={'ABOUT ME'} />
                     <Title text={'A dedicated Front-end Developer based in Moscow, Russia 📍'}/>
-                    <p className="me__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, obcaecati est voluptas quam rem eum consequuntur molestiae laborum beatae, odit nostrum sed commodi mollitia, iste voluptate. Beatae rerum numquam natus.
-                    Esse eum expedita adipisci ea accusantium illo, sunt ut numquam voluptates corrupti quod.
+                    <p className="me__text">I entered IT in 2014 and worked as a tester in game development. Then for more than 6 years I worked in large magazines as an editor and project manager: Igromania, Kanobu, Cosmopolitan, Grazia, etc. Over the last year I have been evolving as a web developer: I have been developing websites and web applications.
                     </p>
                 </div>
             </div>

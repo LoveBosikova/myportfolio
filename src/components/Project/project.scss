@@ -98,6 +98,10 @@
         padding: .7rem 1rem;
         box-shadow: $card-shadow;
     }
+
+    &__techname {
+        white-space: nowrap;
+    }
 }
 
 .links {
@@ -133,6 +137,7 @@
 
     &__text {
         color: $main-black;
+        white-space: nowrap;
     } 
 }
 

@@ -9,8 +9,6 @@
     padding-top: 10rem;
     padding-bottom: 7rem;
 
-    
-
     &__itemsWrap {
         display: flex;
         flex-wrap: wrap;
@@ -38,11 +36,19 @@
     &__type {
         @include poppins-700-13;
         padding-bottom: 1rem;
+
+        @media (max-width: 500px) {
+            @include poppins-700-11;
+        }
     }
 
     &__number {
         @include poppins-200-12;
         color: $main-gray;
+
+        @media (max-width: 500px) {
+            @include poppins-200-10;
+        }
     }
 
     @media (max-width: 900px) {

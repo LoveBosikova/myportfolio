@@ -75,6 +75,12 @@
     font-size: 1.2rem;
 }
 
+@mixin poppins-200-10 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
 @mixin poppins-500-11 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
