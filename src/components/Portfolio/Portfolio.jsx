@@ -3,13 +3,26 @@ import Title from "../Title/Title";
 import Project from "../Project/Project";
 import styles from './portfolio.scss';
 
-export default function Portfolio (props) {
+export default function Portfolio () {
     return (
         <section className="portfolio__wrap" id="projects">
             <div className="portfolio">
                 <Uptitle text={'PORTFOLIO'}/>
                 <Title text={'Each project is a unique piece of development 🧩'}/>
                 <div className="portfolio__projectsWrap">
+
+                    <Project img={'./topService.svg'}
+                            alt={'Document Flow App '}
+                            name={'TopService'}
+                            time={'(2024-2025)'}
+                            emoji={'💤'}
+                            git={'closed information'}
+                            demo={'https://ts.web-creator.ru/'}
+                            description={'Offer exchange with full document flow - Electronic signature, Secure payments, Transparent conditions'}
+                            tech1={'TS'}
+                            tech2={'Next'}
+                            flex={'reverse'}/> 
+
                     <Project img={'./SleepBabySleep.webp'}
                             alt={'Sleeptracker for kids'}
                             name={'SleepBabySleep'}
