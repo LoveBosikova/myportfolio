@@ -1,7 +1,6 @@
 import Uptitle from "../Uptitle/Uptitle";
 import Title from "../Title/Title";
 import Project from "../Project/Project";
-import styles from './portfolio.scss';
 
 export default function Portfolio () {
     return (
@@ -21,7 +20,19 @@ export default function Portfolio () {
                             description={'Offer exchange with full document flow - Electronic signature, Secure payments, Transparent conditions'}
                             tech1={'TS'}
                             tech2={'Next'}
-                            flex={'reverse'}/> 
+                            flex={'column'}/> 
+
+                    <Project img={'./fototapete.png'}
+                        alt={'Online shop for ordering wallpapers'}
+                        name={'Fototapete'}
+                        time={'(Feb 2024 - March 2025)'}
+                        emoji={'💤'}
+                        git={'https://github.com/LoveBosikova/fototapete'}
+                        demo={'https://lovebosikova.github.io/fototapete/'}
+                        description={'The online shop for ordering wallpapers contains a quote calculator, galleries, a shopping cart, favourites and much more!'}
+                        tech1={'TS'}
+                        tech2={'React'}
+                        flex={'reverse'}/> 
 
                     <Project img={'./SleepBabySleep.webp'}
                             alt={'Sleeptracker for kids'}
