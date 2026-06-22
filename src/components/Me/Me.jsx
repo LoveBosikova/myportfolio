@@ -14,8 +14,15 @@ export default function Me (props) {
                 </div>
                 <div className="me__textSide">
                     <Uptitle text={'ABOUT ME'} />
-                    <Title text={'A dedicated Front-end Developer based in Moscow, Russia 📍'}/>
-                    <p className="me__text">I entered IT in 2014 and worked as a tester in game development. Then for more than 6 years I worked in large magazines as an editor and project manager: Igromania, Kanobu, Cosmopolitan, Grazia, etc. Over the last year I have been evolving as a web developer: I have been developing websites and web applications.
+                    <Title text={'Опытный СММ-специалист. Москва, Россия 📍'}/>
+                    <p className="me__text">Я SMM-специалист с опытом в медиа, PR и контент-маркетинге более 8 лет. Запускала и развивала digital-проекты с нуля, работала с Telegram-каналами, брендами, инфлюенсерами, СМИ и редакционными командами.
+
+Мой фокус — сильный контент, понятная стратегия и рост аудитории. 
+<br></br>
+Я умею выстраивать редполитику, создавать контент-планы, запускать рекламные интеграции, работать с посевами, партнёрами и экспертами. 
+<br></br>
+
+Среди проектов — собственное Telegram-СМИ о релокации для IT-специалистов, онлайн-журнал Liberty, а также работа с брендами и медиа вроде Cosmopolitan, Kanobu, «ВкусВилл», Motorola, FixPrice и другими.
                     </p>
                 </div>
             </div>

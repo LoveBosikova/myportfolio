@@ -5,16 +5,71 @@ import icons3 from "./icons3";
 import icons4 from "./icons4";
 import styles from './about.scss'
 
+import logo1 from "./cnd.png"
+import logo2 from "./orly.jpg"
+import logo3 from "./Group 9211.png"
+import logo4 from "./logo-thevoice-full_b33872b.svg"
+import logo5 from "./outline-logo.png"
+// import logo1 from "./354-3548332_as-the-nail-industrys-most-innovative-brand-cnd™-cnd-logo-png.png"
+// const icons1 = logo1
+
 
 export default function About (props) {
+
+
+
+    /*
+quickSort([5, 3, 2, 1]) => [1, 2, 3, 5]
+quickSort([1, 2, 3]) => [1, 2, 3]
+*/
+
+function quickSort(array) {
+
+    let result = array
+
+    if (array.length <= 1) return result;
+    
+    
+    let center = Math.floor(array.length / 2);
+    let startLeft = 0
+
+    let leftPart = result.slice(startLeft, center)
+    let rightPart = result.slice(center + 1)
+
+    const newLeft = []
+    const newRight = []
+        for (const item of leftPart) {
+            if (item >= result[center]) {
+                newRight.push(item)
+            } else {
+                newLeft.push(item)
+            }
+        }
+        for (const item of rightPart) {
+            if (item >= result[center]) {
+                newRight.push(item)
+            } else {
+                newLeft.push(item)
+            }
+        }
+
+
+    return [...quickSort(newLeft), result[center], ...quickSort(newRight)];
+}
+
+console.log(quickSort([5, 3, 2, 1]));
+
+
+
+
     return (
         <section className="about__container" id="about">
             <div className="about">
                 <div className="about__mainSection">
                     <div className="about__textSide">
                         <div className="about__textWrap">
-                            <h1 className="about__title">Front-End React Developer <span className="about__handWrap"><img className="about__handImg" src="wavingHand.png" alt="Hello! I'm waving you." /></span></h1>
-                            <p className="about__description">Hi, I'm Liubov Bosikova. A passionate Front-end React Developer based in Moscow, Russia. 📍</p>
+                            <h1 className="about__title">SMM-специалист <span className="about__handWrap"><img className="about__handImg" src="wavingHand.png" alt="Hello! I'm waving you." /></span></h1>
+                            <p className="about__description">Привет! Я Любовь Гулидова. Веду соцсети со смыслом и толком. Москва, Россия. 📍</p>
                     <div className="about__IconsWrap">
                         <div className="about__icon">
                             <a className="about__linkIcon about__linkIcon--git" href="https://github.com/LoveBosikova" target='_blank'>
@@ -46,13 +101,31 @@ export default function About (props) {
             
             <div className="about__technologies">
                 <div className="about__stackTextWrap">
-                    <p className="about__stackText">Tech Stack</p>
+                    <p className="about__stackText">Проекты</p>
                 </div>
+                {/* <div className="icons__wrap">
+                    <IconPair icons={logo1} />
+                    <IconPair icons={logo2} />
+                    <IconPair icons={logo3} />
+                    <IconPair icons={logo4} />
+                    <IconPair icons={logo5} />
+                </div> */}
                 <div className="icons__wrap">
-                    <IconPair icons={icons1} />
-                    <IconPair icons={icons2} />
-                    <IconPair icons={icons3} />
-                    <IconPair icons={icons4} />
+                    <div className="about__icon-pair">
+                        <img src={logo1} alt="CND logo" />
+                    </div>
+                    <div className="about__icon-pair">
+                        <img src={logo2} alt="Project logo" />
+                    </div>
+                    <div className="about__icon-pair">
+                        <img src={logo3} alt="Project logo" />
+                    </div>
+                    <div className="about__icon-pair">
+                        <img src={logo4} alt="The Voice logo" />
+                    </div>
+                    <div className="about__icon-pair">
+                        <img src={logo5} alt="Outline logo" />
+                    </div>
                 </div>
             </div>
             </div>

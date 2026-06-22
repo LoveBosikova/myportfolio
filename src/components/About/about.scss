@@ -118,6 +118,16 @@
     &__stackText {
         @include moolish-800-11;
     }
+
+    &__icon-pair {
+        width: 6vw;
+        max-width: 6vw;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
 
 .icons {
@@ -130,7 +140,10 @@
     &__wrap {
         display: flex;
         flex-basis: 65%;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        margin-left: 1vw;
 
         @media (max-width: 900px) {
             width: 80%;
