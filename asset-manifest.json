@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.c8f75a86.css",
-    "main.js": "/myportfolio/static/js/main.34bc568b.js",
+    "main.js": "/myportfolio/static/js/main.fc77db94.js",
     "static/js/787.39de3ef5.chunk.js": "/myportfolio/static/js/787.39de3ef5.chunk.js",
     "static/media/AboutPhoto.jpeg": "/myportfolio/static/media/AboutPhoto.154fbe420b91c2dc83e4.jpeg",
     "static/media/354-3548332_as-the-nail-industrys-most-innovative-brand-cnd™-cnd-logo-png.png": "/myportfolio/static/media/354-3548332_as-the-nail-industrys-most-innovative-brand-cnd™-cnd-logo-png.dba0178fd831bd85d21c.png",
@@ -10,11 +10,11 @@
     "static/media/logo-thevoice-full_b33872b.svg": "/myportfolio/static/media/logo-thevoice-full_b33872b.87c83850f7f7bfaeedd6ce203db1931a.svg",
     "index.html": "/myportfolio/index.html",
     "main.c8f75a86.css.map": "/myportfolio/static/css/main.c8f75a86.css.map",
-    "main.34bc568b.js.map": "/myportfolio/static/js/main.34bc568b.js.map",
+    "main.fc77db94.js.map": "/myportfolio/static/js/main.fc77db94.js.map",
     "787.39de3ef5.chunk.js.map": "/myportfolio/static/js/787.39de3ef5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8f75a86.css",
-    "static/js/main.34bc568b.js"
+    "static/js/main.fc77db94.js"
   ]
 }
