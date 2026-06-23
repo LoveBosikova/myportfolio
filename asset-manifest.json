@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.c8f75a86.css",
-    "main.js": "/myportfolio/static/js/main.233aebcb.js",
+    "main.css": "/myportfolio/static/css/main.4614aac5.css",
+    "main.js": "/myportfolio/static/js/main.848f0cb9.js",
     "static/js/787.39de3ef5.chunk.js": "/myportfolio/static/js/787.39de3ef5.chunk.js",
     "static/media/AboutPhoto.jpeg": "/myportfolio/static/media/AboutPhoto.154fbe420b91c2dc83e4.jpeg",
+    "static/media/orly.webp": "/myportfolio/static/media/orly.95f128aae801fad40b39.webp",
     "static/media/354-3548332_as-the-nail-industrys-most-innovative-brand-cnd™-cnd-logo-png.png": "/myportfolio/static/media/354-3548332_as-the-nail-industrys-most-innovative-brand-cnd™-cnd-logo-png.dba0178fd831bd85d21c.png",
     "static/media/outline-logo.png": "/myportfolio/static/media/outline-logo.318cb2bb236aa3f5148b.png",
     "static/media/Group 9211.png": "/myportfolio/static/media/Group 9211.11ea3191640f51d57be0.png",
     "static/media/logo-thevoice-full_b33872b.svg": "/myportfolio/static/media/logo-thevoice-full_b33872b.87c83850f7f7bfaeedd6ce203db1931a.svg",
     "index.html": "/myportfolio/index.html",
-    "main.c8f75a86.css.map": "/myportfolio/static/css/main.c8f75a86.css.map",
-    "main.233aebcb.js.map": "/myportfolio/static/js/main.233aebcb.js.map",
+    "main.4614aac5.css.map": "/myportfolio/static/css/main.4614aac5.css.map",
+    "main.848f0cb9.js.map": "/myportfolio/static/js/main.848f0cb9.js.map",
     "787.39de3ef5.chunk.js.map": "/myportfolio/static/js/787.39de3ef5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8f75a86.css",
-    "static/js/main.233aebcb.js"
+    "static/css/main.4614aac5.css",
+    "static/js/main.848f0cb9.js"
   ]
 }
